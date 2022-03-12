@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 // const mailOptions = {
 //   from: 'Arc Development',
-//   to: 'andrefelipesl123@gmail.com',
+//   to: '',
 //   subject: 'Testing nodemailer',
 //   text: 'Test successful',
 // };
@@ -26,7 +26,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     const {name, email, phone, message} = request.query;
     let mailOptions = {
       from: 'Arc Development',
-      to: "",
+      to: "felipebsl111@gmail.com",
       subject: "Message received!",
       html: `
         <p style ="font-size: 16px">From: ${name}</p>
