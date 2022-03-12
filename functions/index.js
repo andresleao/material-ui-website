@@ -26,7 +26,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     const {name, email, phone, message} = request.query;
     let mailOptions = {
       from: 'Arc Development',
-      to: "felipebsl111@gmail.com",
+      to: "",
       subject: "Message received!",
       html: `
         <p style ="font-size: 16px">From: ${name}</p>
