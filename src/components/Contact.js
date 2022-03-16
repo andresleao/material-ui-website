@@ -317,6 +317,7 @@ function Contact(props) {
             <Grid item style={{ maxWidth: '20em' }}>
               <TextField
                 InputProps={{ disableUnderline: true }}
+                placeholder="Tell us more about your project..."
                 fullWidth
                 multiline
                 rows={10}
